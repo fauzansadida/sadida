@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Nusantara</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Museum Nusantara</h1>
+        <nav>
+            <ul>
+                <li><a href="#collections">Koleksi</a></li>
+                <li><a href="#booking">Pesan Tiket</a></li>
+                <li><a href="php/lihat_booking.php">Lihat Pemesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="collections">
+        <h2>Koleksi</h2>
+        <div class="collection-item">
+            <img src="images.jpeg">
+            <p>Artefak resmi Negara Bagian Tennessee adalah patung batu seorang pria yang sedang berlutut, diukir oleh seniman penduduk asli Amerika antara sekitar tahun 1250 dan 1350 M selama periode prasejarah Tennessee di Mississippian. Patung setinggi 18,5 inci itu ditemukan pada tahun 1939 oleh seorang petani penyewa yang bekerja di tempat yang kemudian menjadi situs arkeologi Sellars Farm di Wilson County. Situs tersebut terdiri dari kota Mississippi, dengan gundukan platform dan area alun-alun yang dikelilingi tanggul palisade. Saat ini Sellars Farm adalah Kawasan Arkeologi Negara Bagian dan satelit dari Taman Negara Bagian Long Hunter. Artefak Negara adalah bagian dari koleksi Museum Sejarah Alam dan Budaya McClung di Universitas Tennessee-Knoxville.</p>
+
+            <p>Patung batu berukir yang mirip dengan artefak ini telah ditemukan di situs periode Mississippi hingga pertengahan Selatan. Ada berbagai variasi gaya di antara patung-patung tersebut, di antaranya Artefak Negara Bagian Tennessee digambarkan sebagai salah satu “patung gaya Tennessee-Cumberland yang digambarkan paling rumit dan realistis yang ditemukan hingga saat ini.” Patung-patung tersebut sering kali dibuat sebagai pasangan pria-wanita, dan para ahli percaya bahwa patung-patung tersebut dikaitkan dengan penghormatan terhadap leluhur penting. Pada tahun 2016, Museum McClung memperoleh versi perempuan dari Artefak Negara. Keduanya dipajang di museum dalam pameran permanen “Arkeologi dan Penduduk Asli Tennessee.”</p>
+        </div>
+        <!-- Tambahkan lebih banyak koleksi di sini -->
+    </section>
+    <hr>
+    <section id="booking">
+        <h2><center>Pesan Tiket</center></h2>
+        <form id="booking-form" action="php/proses_booking.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Tanggal Kunjungan:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p><a href="https://wa.me/6281288395949">Contact Service</a> <img src="danta.png" width="30px"></p>
+        <p>&copy; 2024 Museum Nusantara</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
